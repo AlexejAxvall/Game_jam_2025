@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://datitpt1y7ep8"]
+
+[ext_resource type="Script" uid="uid://bny5neurnw1fx" path="res://furniture.gd" id="1_fugw3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dx7j5"]
+
+[node name="Furniture" type="RigidBody2D" groups=["Furniture"]]
+gravity_scale = 0.0
+script = ExtResource("1_fugw3")
+
+[node name="Rigi_collision_shape" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_dx7j5")
